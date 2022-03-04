@@ -22,7 +22,7 @@ print(type(image))
 print(image.dtype)
 print(image)
 
-'''
+
 print("Eroding, Dilation")
 # Creating kernel
 kernel = np.ones((5, 5), np.uint8)
@@ -212,7 +212,7 @@ dst = cv2.inpaint(image,mask,5,cv2.INPAINT_TELEA)
 #dst = cv2.inpaint(img, mask, 5, cv2.INPAINT_NS)
 cv2.imshow('Watermark image', dst)
 cv2.waitKey(0)
-'''
+
 
 print("Removing Background Noise")
 pts1  = np.float32([[57 , 49],[419 , 45],[414 , 477],[56 , 475]])
@@ -252,7 +252,7 @@ plt.show()
 
 
 
-'''
+
 print("Filter Images")
 kernel = np.array([[1,1,1],
                   [1,1,1],
@@ -278,5 +278,5 @@ plt.xlabel("Pixel Intensity- From 0-255", color='crimson')
 plt.title("Histogram Showing Pixel Intensity And Corresponding Number Of Pixels", color='crimson')
 plt.show()
 
-'''
+
 cv2.destroyAllWindows()
